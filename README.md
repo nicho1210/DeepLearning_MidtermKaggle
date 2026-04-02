@@ -51,18 +51,6 @@ max tokens ≈ 2000
 
 If both fail → fallback SVG is used.
 
-🧠 Inference
-Two-Stage Generation Strategy
-First Pass (Stable)
-temperature = 0.65
-top_p = 0.90
-max tokens ≈ 640
-Second Pass (Fallback Attempt)
-temperature = 0.80
-top_p = 0.95
-max tokens ≈ 2000
-
-If both fail → fallback SVG is used.
 
 ✅ SVG Validation
 
@@ -78,16 +66,3 @@ Invalid outputs → replaced with fallback SVG
 Sequential generation (no batching)
 Each sample may use up to 2 passes
 
-✅ SVG Validation
-
-Each SVG is checked using:
-
-XML parsing (ElementTree)
-Root tag must be <svg>
-
-Invalid outputs → replaced with fallback SVG
-
-⏱ Runtime
-~671.6 minutes for 1000 samples
-Sequential generation (no batching)
-Each sample may use up to 2 passes
