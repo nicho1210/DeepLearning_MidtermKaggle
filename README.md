@@ -38,7 +38,7 @@ Target modules:
 q_proj, k_proj, v_proj, o_proj
 gate_proj, up_proj, down_proj
 
-🧠 Inference
+Inference
 Two-Stage Generation Strategy
 First Pass (Stable)
 temperature = 0.65
@@ -52,7 +52,7 @@ max tokens ≈ 2000
 If both fail → fallback SVG is used.
 
 
-✅ SVG Validation
+SVG Validation
 
 Each SVG is checked using:
 
